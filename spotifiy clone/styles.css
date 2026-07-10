@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body{
+   
+    background: linear-gradient(to right, #141e30, #243b55);
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+nav{
+    font-family: 'Ubuntu',sans-serif;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.6);
+    background: rgba(0,0,0, 0.7);
+    backdrop-filter: blur(10px);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0px 12px;
+}
+
+
+.brand img{
+    width: 44px;
+    padding: 0px 8px;
+
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+    .container{
+        min-height: 72vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.bottom{
+    position: relative;
+    height: 130px;
+    bottom: 0;
+    background-color: rgb(0, 0, 0,0.8);
+    display: flex;
+    backdrop-filter: blur(15px);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.6);
+   
+    
+}
+
+.icons{
+    display:flex;
+align-items:center;
+  gap: 15px;
+    margin-top: 14px;
+
+}
+.icons i{
+    cursor: pointer;
+    transition: 0.3s;
+    margin:10px;
+
+    
+}
+.icons i:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+    text-shadow: 0 0 15px #1db954;
+    color: #1db954;
+}
+#myProgressBar{
+    width: 80%;
+    cursor: pointer;
+    accent-color: #1db954;
+    transition: 0.2s;
+    height: 8px;
+    border-radius: 10px;
+    
+
+
+}
+
+.songItemContainer{
+    margin-top: 74px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+background: rgba(255,255,255,0.15);
+    
+    width: 80%;
+    color: white;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0px 23px;
+    border-radius: 34px;
+    
+}
+.songItem:hover{
+    transform: scale(1.03)translateY(-3px);
+    transition: 0.3s;
+    background-color: #1db954;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    color: white;
+    
+}
+
+.timestamp{
+    margin: 0px 23px;
+    
+}
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+    color: #1db954;
+    
+   
+
+
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.8s ease-in;
+
+}
+#currentTime{
+    margin-left: 10px;
+    font-size: 14px;
+    color: white;
+}
+#songTime{
+    margin-left: 12px;
+    font-size: 14px;
+    color: #1db954;
+    font-weight: bold;
+}
+
+.activeSong{
+    background-color: #1db954;
+    color: white;
+    animation: pulse 1s infinite;
+}
+#volumeBar{
+width:200px;
+margin-top:10px;
+accent-color:#21c4fb;
+}
+.extraControls{
+position:absolute;
+right:10vw;
+top:40px;
+}
+
+#shuffle{
+font-size:22px;
+cursor:pointer;
+color:white;
+background-color: rgb(9, 198, 251);
+
+}
+
+#shuffle:hover{
+color:#1db954;
+transform:scale(1.2);
+transition:0.2s;
+}
+@keyframes pulse {
+    0%{ transform: scale(1); }
+    50%{ transform: scale(1.1); }
+    100%{ transform: scale(1); }
+}
+
+
+.song-time {
+    color: white;
+}
